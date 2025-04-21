@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+.top-section {
+    background-color: #03A791; 
+    padding: 25px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+  }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #81E7AF;
+  }
+  p1 {
+    color: #091634;
+  }
+  p2 {
+    color: #091634;
+  }
