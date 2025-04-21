@@ -10,32 +10,34 @@ async function convertCurrency() {
   
     try {
         console.log(resultCurrency)
+        let converted;
       if(resultCurrency === 'USD') {
         const rate = 0.59; // Rate as of 21/4/25
-        const converted = (amount * rate).toFixed(2);
-        resultElement.textContent = `${amount} NZD = ${converted} ${resultCurrency}`;
+        converted = (amount * rate).toFixed(2);
       }
       if(resultCurrency === 'GBP') {
         const rate = 0.45; // Rate as of 21/4/25
-        const converted = (amount * rate).toFixed(2);
-        resultElement.textContent = `${amount} NZD = ${converted} ${resultCurrency}`;
+        converted = (amount * rate).toFixed(2);
       }
       if(resultCurrency === 'AUD') {
         const rate = 0.94; // Rate as of 21/4/25
-        const converted = (amount * rate).toFixed(2);
-        resultElement.textContent = `${amount} NZD = ${converted} ${resultCurrency}`;
+        converted = (amount * rate).toFixed(2);
       }
       if(resultCurrency === 'CAD') {
         const rate = 0.83; // Rate as of 21/4/25
-        const converted = (amount * rate).toFixed(2);
-        resultElement.textContent = `${amount} NZD = ${converted} ${resultCurrency}`;
+        converted = (amount * rate).toFixed(2);
       }
     if(resultCurrency === 'EUR') {
         const rate = 0.53; // Rate as of 21/4/25
-        const converted = (amount * rate).toFixed(2);
-        resultElement.textContent = `${amount} NZD = ${converted} ${resultCurrency}`;
+        converted = (amount * rate).toFixed(2);
     }
-    
+    if(resultCurrency === 'JPY') {
+        const rate = 85.04; // Rate as of 21/4/25
+        converted = (amount * rate).toFixed(2);
+    }
+    resultElement.textContent = `${amount} NZD = ${converted} ${resultCurrency}`;
+
+
     }
     catch (error) {
       console.error('Error fetching conversion rate:', error);
