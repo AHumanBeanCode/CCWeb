@@ -9,7 +9,23 @@
 </head>
 
 <body>
-    <p1>When completed, this website will allow the conversion of NZD into USD and GBP.</p1>
+    <p1>When completed, this website will allow the conversion of NZD into multiple currencies.</p1>
+    <br>
+    <input type="number" id="amount" placeholder="Enter amount" />
+    <p1> NZD to: </p1>
+    <select id = "resultCurrency">
+        <option value="USD">USD</option>
+        <option value="GBP">GBP</option>
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="EUR">EUR</option>
+    </select>
+    
+    <button onclick="convertCurrency()">Convert</button>
+
+    <p id="result"></p>
+
+  <script src="converter.js"></script>
 </body>
 
 </html>
