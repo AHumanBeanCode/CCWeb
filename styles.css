@@ -6,19 +6,49 @@
   
 .top-section {
     background-color: #03A791; 
-    padding: 25px;
+    padding: 35px; 
     text-align: center;
+    font-size: x-large;
     font-family: Arial, Helvetica, sans-serif;
     color: whitesmoke;
   }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #81E7AF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  text-align: center;
+  background-color: #81E7AF;
   }
   p1 {
     color: #091634;
   }
+  input{
+    border: 1px black;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
+    width: 150px;
+  }
+  select{
+    border: 1px black;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
+    width: 75px;
+  }
+  button{
+    border: 1px black;
+    border-radius: 25px;
+    padding: 5px;
+    margin: 5px;
+    width: 100px;
+    background-color: #f58282;
+  }
   p2 {
     color: #091634;
+  }
+  p3 {
+    color:#091634;
+    font-weight: bold;
+    font-size: xx-large;
   }

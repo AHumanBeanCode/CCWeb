@@ -35,13 +35,13 @@ async function convertCurrency() {
         const rate = 85.04; // Rate as of 21/4/25
         converted = (amount * rate).toFixed(2);
     }
-    resultElement.textContent = `${amount} NZD = ${converted} ${resultCurrency}`;
+    resultElement.textContent = `${amount} NZD is equal to ${converted} ${resultCurrency}`;
 
 
     }
     catch (error) {
-      console.error('Error fetching conversion rate:', error);
-      resultElement.textContent = 'Error fetching conversion rate.';
+      console.error('Error fetching result:', error);
+      resultElement.textContent = 'Error fetching result.';
     }
   }
   
